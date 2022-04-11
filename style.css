@@ -1,0 +1,137 @@
+*{
+    margin: 0 auto; 
+    /*Border-box adds padding to the margin USE THIS!*/
+    box-sizing: border-box; 
+    max-width: 1600px;
+    font-family: monospace;
+}
+
+body {
+    background-color: #BACDCF;
+}
+
+ /*NAV BAR*/
+ header{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 23px;
+    
+}
+
+#logo {
+    width: 300px; 
+    height: 300px; 
+    position: relative;
+    right: 75px;
+}
+ 
+
+nav ul{
+    list-style: none; 
+    display: flex;
+    
+}
+
+.nav{
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.nav_home {
+    position: relative; 
+    right: 60px; 
+    border: 1px #28536B solid;
+
+}
+
+
+.nav_about{
+    position: relative; 
+    right: 40px; 
+    border: 1px #28536B solid;
+}
+
+
+
+.nav_work{
+    position: relative; 
+    right: 20px;
+    border: 1px #28536B solid;
+}
+
+
+.nav_contact{
+    border: 1px #28536B solid;
+
+}
+
+
+nav li{
+    display: inline-block; 
+   /*border: 1px #28536B solid;*/
+}
+
+nav a{
+    display: block; 
+    width: 135px; 
+    background: #C2948A; 
+    text-align: center; 
+    margin: 1px; 
+    padding: 10px 20px; 
+    color: black; 
+    text-decoration: none;
+}
+
+nav li ul {
+    display: none;
+    padding: 0; 
+
+}
+
+
+
+.nav_work_subitem{
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    /*right: 7px*/;
+}
+
+nav li:hover ul{
+    display: block; 
+}
+
+nav a:hover{
+    background: #28536B; 
+    color: #F6F0ED; 
+    
+}
+
+/*End of Nav Bar*/
+
+.greeting{
+    display: flex;
+   
+}
+h1{
+    position: relative;
+    left:50px;
+    top: 100px;
+    font-size: 60px;
+}
+
+.greeting img{
+    width: 400px; 
+    height: 500px;
+    position: relative; 
+    right: 75px; 
+}
+
+.webdev img{
+    position: relative;
+    bottom: 400px; 
+}
+
+/*Coolors palette
+/*https://coolors.co/28536b-c2948a-7ea8be-f6f0ed-bbb193*/
