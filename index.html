@@ -2,41 +2,72 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"/>
     </head>
 
+    <style>
+        h1{
+            font-size: 30px;
+            padding-top: 80px;
+            
+        }
+
+        h3{
+            font-size: 15px;
+        }
+    </style>
+
     <body>
+        <!--NAV BAR-->
         <header>
            <img src="assets/img/Ashley_Adams_Artistiry_Logo.PNG" id="logo">
-            <!--Use this to create your nav!-->
-            <nav class="nav">
+            <nav>
                 <ul>
-                    <li class="nav_home"><a href="#">Home</a></li>
-                    <li class="nav_about"><a href="#">About</a></li>
-                    <li class="nav_work"><a href="#">Work</a>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a>
 
                         <ul>
-                            <li class="work_item"><a href="#"><span class="nav_work_subitem"> Web Dev</span></a></li>
+                            <li><a href="#"><span class="nav_work_subitem"> Web Development</span></a></li>
                         </ul>
                         <ul>
-                            <li><a href="#"><span class="nav_work_subitem">Arts Ed</span></a></li>
+                            <li><a href="#"><span class="nav_work_subitem">Arts Integration</span></a></li>
                         </ul>
                     </li>
-                    <li class="nav_contact"><a href="#">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>    
             </nav>
         </header>
+        <!--END OF NAV BAR-->
 
-        <section class="greeting">
-            <h1>Hello!  I'm Ashley</h1>
-            <img src="/assets/img/Commercial_Headshot_Web.JPG">
-        </section>
-        <section class="imgs">
-            <div class="webdev">
-                <!--<img src="/assets/img/Computer.png">
-                <h3>Web Developer</h3>
+        <!--MAIN-->
+        <section class="container accent">
+            <div class="greeting" id="heroimg">
+                <img src="assets/img/Commercial_Headshot_Web.JPG" height="400px">
             </div>
-            <img src="/assets/img/Book.png">-->
+
+            <div class="greeting p40">
+                <h1>Hello! I'm Ashley</h1>
+                <div class="container">
+                    <!-- col -->
+                    <div class="c33">
+                        <img src="assets/img/computer.jpeg" >
+                        <h3 class="tc">Web Developer</h3>
+                    </div>
+                    <!-- col -->
+                    <div class="c33">
+                        <img src="assets/img/lightbulb.jpeg">
+                        <h3 class="tc">Educator</h3>
+                    </div>
+                    <!-- col -->
+                    <div class="c33">
+                        <img src="assets/img/lightbulb.jpeg">
+                        <h3 class="tc">Creative</h3>
+                    </div>
+                </div>
+                <p class=><a href="#" class="btn">learn more</a></p>
+            </div>
         </section>
+        <!--END OF MAIN-->
     </body>
 </html>
