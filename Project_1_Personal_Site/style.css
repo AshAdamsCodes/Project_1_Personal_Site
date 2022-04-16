@@ -1,0 +1,125 @@
+*{
+    margin: 0 auto; 
+    /*Border-box adds padding to the margin USE THIS!*/
+    box-sizing: border-box; 
+    max-width: 1600px;
+    font-family: monospace;
+}
+
+body {
+    background-color: #BACDCF;
+}
+
+ /*NAV BAR*/
+ header{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 23px;
+    position: relative;
+    padding-bottom: 30px;
+
+}
+
+#logo {
+    width: 200px; 
+    height: 200px; 
+    position: relative;
+    top: 10px;
+
+    /*right: 75px;*/
+}
+ 
+nav {
+    padding-top: 75px;
+}
+
+nav ul{
+    list-style: none; 
+    display: flex;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    vertical-align: top;
+    border: 1px black;
+}
+
+nav li li{
+    display: none;
+}
+
+nav a{
+    display: block; 
+    width: 135px; 
+    background: #C2948A; 
+    text-align: center; 
+    margin: 1px; 
+    padding: 10px 20px; 
+    color: black; 
+    text-decoration: none;
+}
+
+nav a:hover{
+    background: #28536B; 
+    color: #F6F0ED; 
+    border: 2px #28536B solid;
+    border-radius: 5px; 
+}
+
+nav li:hover li{
+    display: block;
+}
+
+.nav_work_subitem{
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+/*End of NAV BAR*/
+
+/*MAIN*/
+.container{
+	display:flex;
+	max-width:800px;
+	margin:0 auto;
+    position: relative;
+    top:12px
+}
+
+#heroimg{
+    position: relative;
+   
+}
+.greeting{
+    background-color: rgba(246,240,237, 0.5);
+    padding: 56px;
+    margin-bottom: 50px;
+}
+
+.btn{
+	display:inline-block;
+	background: #C2948A;
+	text-decoration:none;
+	padding:5px 25px;
+	color: black;
+    border: #28536B solid;
+	border-radius:5px;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+    left: 70px;
+    text-align: center;
+    
+}
+
+.btn:hover{
+	color: #F6F0ED;
+    background: #28536B;
+	border:1px solid #6b705c;
+}
+/*END OF MAIN*/
+
+
+/*Coolors palette
+/*https://coolors.co/28536b-c2948a-7ea8be-f6f0ed-bbb193*/
