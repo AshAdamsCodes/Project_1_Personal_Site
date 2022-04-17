@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <script src="https://kit.fontawesome.com/897834c2d2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <style>
+
+            .heading{
+                max-width: 500px;
+                position: relative;
+                left: 50px;
+                
+            }
+            .heading h1{
+                font-size: 50px;
+            }
+
+            .heading p{
+                font-size: 23px;
+            }
+
+            #name, #email, #message{
+                font-size: 20px;
+                border:  2px solid black;
+                border-radius: 5px;
+                color: #28536B;
+
+            }
+
+            #message:hover, #email:hover, #name:hover{
+                background-color: #BBB193;
+            }
+
+            #submit{
+                font-size: 20px;
+                border: black 2px solid;
+                padding: 5px; 
+                border-radius: 5px;
+                position: relative;
+                left: 42%
+            }
+
+            #submit:hover{
+                background-color: #C2948A;
+                cursor: pointer;
+            }
+
+            section{
+                display: flex;
+            }
+            .social{
+                position: relative;
+                top: 175px;
+                right: 50px;
+                text-align: center;
+            }
+
+            .social p{
+                font-size: 22px;
+            }
+
+            .icon{
+                display: inline-block;
+                text-align: center;
+                font-size: 40px;
+                padding: 15px 5px; 
+                text-decoration: none;
+                color: black;
+            }
+
+            a:visited{
+                color: black; 
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <!--NAV BAR-->
+        <header>
+        <img src="assets/img/logo_2.jpeg" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a  href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a>
+
+                        <ul>
+                            <li><a href="work.html"><span class="nav_work_subitem"> Web Development</span></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><span class="nav_work_subitem">Arts Integration</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>    
+            </nav>
+        </header>
+        <!--END OF NAV BAR-->
+
+        <section class="heading_and_descrip">
+            <div class="heading">
+                <h1>Get in Touch</h1>
+                <p>Want to view my resume, build something together, or just say hi?  I'd love to hear from you.</p>
+                <br>
+                <p>Fill in your info in the form below.</p>
+                <br>
+
+                <!--FORM-->
+                <form action="contact.html" method="GET">
+                    <!--NAME-->
+                    <input id="name" type="text" name="name" value="Name" required>
+                    <br>
+                    <br>
+                    <!--EMAIL-->
+                    <input id="email" name="email" type="text" value="Email" required>
+                    <br>
+                    <br>
+                    <!--MESSAGE-->
+                    <textarea id="message" name="message" required rows='5' cols='40'>Type Here!</textarea>
+                    <br>
+                    <br>
+                    <!--Submit Button-->
+                     <input type="submit" value="Send" id="submit">
+                </form>
+            </div>
+            <div class="social">
+                <p>Feeling social? Find me online!</p>
+                <div class="icon"><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+            </div>
+        </section>
+    </body>
+</html>

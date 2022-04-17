@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>Home</title>
+        <script src="https://kit.fontawesome.com/897834c2d2.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css"/>
+        
     </head>
 
     <style>
@@ -15,33 +17,46 @@
         h3{
             font-size: 15px;
         }
+
+        .icon{
+            font-size: 40px;
+        }
+
+        .c33{
+            text-align: center;
+            padding-top: 20px;
+        }
+        .c33 img{
+            width: 70px;
+            height: 70px
+        }
     </style>
 
     <body>
         <!--NAV BAR-->
         <header>
-           <img src="assets/img/Ashley_Adams_Artistiry_Logo.PNG" id="logo">
+           <img src="assets/img/logo_2.jpeg" id="logo">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">Work</a>
 
                         <ul>
-                            <li><a href="#"><span class="nav_work_subitem"> Web Development</span></a></li>
+                            <li><a href="work.html"><span class="nav_work_subitem"> Web Development</span></a></li>
                         </ul>
                         <ul>
                             <li><a href="#"><span class="nav_work_subitem">Arts Integration</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>    
             </nav>
         </header>
         <!--END OF NAV BAR-->
 
         <!--MAIN-->
-        <section class="container accent">
+        <section class="container">
             <div class="greeting" id="heroimg">
                 <img src="assets/img/Commercial_Headshot_Web.JPG" height="400px">
             </div>
@@ -51,21 +66,21 @@
                 <div class="container">
                     <!-- col -->
                     <div class="c33">
-                        <img src="assets/img/computer.jpeg" >
+                        <div class="icon"><i class="fa-solid fa-display"></i></div>
                         <h3 class="tc">Web Developer</h3>
                     </div>
                     <!-- col -->
                     <div class="c33">
-                        <img src="assets/img/lightbulb.jpeg">
+                        <div class="icon"><i class="fa-solid fa-book-open"></i></div>
                         <h3 class="tc">Educator</h3>
                     </div>
                     <!-- col -->
                     <div class="c33">
-                        <img src="assets/img/lightbulb.jpeg">
+                        <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
                         <h3 class="tc">Creative</h3>
                     </div>
                 </div>
-                <p class=><a href="#" class="btn">learn more</a></p>
+                <p class=><a href="about.html" class="btn">learn more</a></p>
             </div>
         </section>
         <!--END OF MAIN-->
