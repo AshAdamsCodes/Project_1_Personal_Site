@@ -30,8 +30,25 @@
                 text-align: center;
             }
 
+
             .heading a{
                 text-decoration: none;
+            }
+
+            .box {
+                -webkit-transition:  -webkit-transform .2s ease-out;
+                -moz-transition: -moz-transform .2s ease-out;
+                -o-transition: -o-transform .2s ease-out;
+                -ms-transition: -ms-transform .2s ease-out; 
+                transition: transform .2s ease-out; 
+                }
+
+            .box:hover {
+                -webkit-transform:scale(2);
+                -moz-transform:scale(2);
+                -o-transform:scale(1.5);
+                transform:scale(1.5);
+                cursor: pointer;
             }
         </style>
     </head>
@@ -63,9 +80,9 @@
             <p>Here are a few projects I've worked on recently.  Want to see more?  <a href="contact.html">Email me</a>.</p>
         </div>
         <div class="work_ex">
-            <img src="assets/img/work_ex_1.jpeg">
-            <img src="assets/img/work_ex_2jpeg.jpeg">
-            <img src="assets/img/work_ex_3.jpeg">
+            <div class="box"><img src="assets/img/work_ex_1.jpeg"></div>
+            <div class="box"><img src="assets/img/work_ex_2jpeg.jpeg"></div>
+            <div class="box"><img src="assets/img/work_ex_3.jpeg"></div>
 
         </div>
     </body>
